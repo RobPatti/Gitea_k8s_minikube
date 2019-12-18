@@ -15,7 +15,7 @@ spec:
         app: gitea
     spec:
       containers:
-        # Image pulled from hub.docker.com/r/gitea/gitea
+        # Image name:tag pulled from hub.docker.com/r/gitea/gitea
         - image: gitea/gitea:latest
           imagePullPolicy: IfNotPresent
           name: gitea
