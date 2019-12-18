@@ -1,18 +1,18 @@
 apiVersion: v1
-  kind: Service
-  metadata:
-    name: gitea
-    # * Create namespace before use Service 
-    namespace: n-gitea
-  spec:
-    ports:
-    - name: ssh
-      port: 22
-      targetPort: ssh
-    - name: http
-      port: 80
-      targetPort: http
-    selector:
-      app: gitea
-    type: NodePort
-kind: List
+kind: Service
+metadata:
+  name: gitea
+  # * Create namespace before use Service 
+  namespace: n-gitea
+spec:
+  ports:
+  - name: ssh
+    port: 22
+    targetPort: ssh
+  - name: http
+    port: 80
+    targetPort: http
+  selector:
+    app: gitea
+  type: NodePort
+
