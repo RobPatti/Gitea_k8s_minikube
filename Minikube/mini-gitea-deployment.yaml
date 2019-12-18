@@ -15,6 +15,7 @@ spec:
         app: gitea
     spec:
       containers:
+        # Image pulled from hub.docker.com/r/gitea/gitea
         - image: gitea/gitea:latest
           imagePullPolicy: IfNotPresent
           name: gitea
@@ -25,6 +26,7 @@ spec:
             # WEB
             - containerPort: 3000
               protocol: TCP
+          # Local resources used for gitea-pod
           resources:
             requests:
               cpu: 1
@@ -35,5 +37,5 @@ spec:
       volumes:
       - name: db-volume
         hostPath:
-          # directory location on host
+          # directory location on host ( Linux )
           path: /var/tmp/gitea

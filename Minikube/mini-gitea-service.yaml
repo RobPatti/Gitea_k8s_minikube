@@ -6,9 +6,11 @@ metadata:
   namespace: n-gitea
 spec:
   ports:
+    # If you have some problems exposing the service, try changing ports, probably already used
   - name: ssh
     port: 22
     targetPort: 22
+    # If you have some problems exposing the service, try changing ports, probably already used
   - name: http
     port: 3000
     targetPort: 3000
