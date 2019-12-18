@@ -8,10 +8,10 @@ spec:
   ports:
   - name: ssh
     port: 22
-    targetPort: ssh
+    targetPort: 22
   - name: http
-    port: 80
-    targetPort: http
+    port: 3000
+    targetPort: 3000
   selector:
     app: gitea
   type: NodePort
