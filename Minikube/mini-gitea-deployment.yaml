@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gitea
   # * Create namespace before use Deployment 
-  namespace: n-gitea
+  namespace: ns-gitea
 spec:
   replicas: 1
   selector:
