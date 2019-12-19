@@ -17,4 +17,4 @@ spec:
   selector:
     app: gitea
   type: NodePort
-# After this use minikube service gitea -n n-gitea   -> Used to expose gitea to your localhost
+# After this use -	 minikube service gitea -n n-gitea   		-> Used to expose gitea to your localhost
