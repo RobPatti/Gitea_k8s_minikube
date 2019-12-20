@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gitea
+  name: gitea-deployment
   # * Create namespace before use Deployment 
   namespace: ns-gitea
 spec:

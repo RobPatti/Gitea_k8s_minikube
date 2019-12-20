@@ -6,4 +6,5 @@ metadata:
   # In metadata -> namespace 
   name: ns-gitea
   labels:
-    name: namespace-gitea
+    name: gitea-namespace
+

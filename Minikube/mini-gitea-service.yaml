@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gitea
+  name: gitea-service
   # * Create namespace before use Service 
   namespace: ns-gitea
 spec:
